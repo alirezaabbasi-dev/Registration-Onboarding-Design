@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "inter";
+    src:
+        local("inter"),
+        url(../fonts/Inter-Regular.ttf) format("truetype");
+}
 :root {
     --primary-color: #1565d8;
     --black-color: #000;
@@ -6,6 +12,7 @@
     --color-8692A6: #8692a6;
     --color-494949: #494949;
     --color-696F79: #696f79;
+    --inter: "inter";
 }
 html {
     font-size: 10px;
@@ -17,6 +24,7 @@ html {
     box-sizing: inherit;
 }
 body {
+    font-family: var(--inter), sans-serif;
     font-size: 1.6rem;
     word-wrap: break-word;
     color: var(--color-8692A6);
@@ -30,18 +38,47 @@ body {
     margin-left: auto;
     position: relative;
 }
+a {
+    text-decoration: none;
+}
+/* shapes */
+.shape-1,
+.shape-2,
+.shape-3,
+.shape-4 {
+    position: absolute;
+}
+.shape-1 {
+    top: 32.5rem;
+}
+.shape-2 {
+    top: 22rem;
+    right: 19rem;
+}
+.shape-3 {
+    bottom: 36rem;
+    right: 19rem;
+}
+.shape-4 {
+    bottom: 0;
+    left: 0;
+}
+
 .login-form {
     display: grid;
     grid-template-columns: 666px 774px;
     height: 1024px;
+    margin: 0 auto;
+    max-width: 1440px;
 }
 
-.login-form_content {
+.login-form__content {
     height: 100%;
+    position: relative;
     background: linear-gradient(rgba(21, 101, 216, 0.9), rgba(21, 101, 216, 0.9)), url("../Images/main-pic.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 5rem;
+    padding: 4rem 8rem;
     color: var(--white-color);
 }
 
@@ -50,15 +87,93 @@ body {
     justify-content: start;
     align-items: center;
     gap: 1rem;
+    margin-bottom: 30rem;
 }
 .login-form__icon {
 }
-.login-form__icon-text {
-}
 
 .login-form__Description {
+    line-height: 3.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 3rem;
+    max-width: 44rem;
+    font-size: 2rem;
 }
 .login-form__label {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 1.8rem;
 }
 .login-form__label-icon {
+}
+.login-item {
+    margin-top: 6rem;
+}
+/* Join Us page*/
+.join-us {
+    padding-left: 12rem;
+    text-align: left;
+}
+.join-us__already-have-account {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    text-align: right;
+}
+.join-us__already-have-account a {
+    color: var(--primary-color);
+}
+.join-us__title {
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--black-color);
+    margin-top: 16rem;
+    margin-bottom: 2rem;
+}
+.join-us__caption {
+    max-width: 35rem;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    margin-bottom: 4rem;
+}
+.join-us__account-type {
+    box-shadow: 0 2px 14px 1px rgba(0, 0, 0, 0.04);
+    max-width: 52rem;
+}
+.join-us__account-type-links {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2rem;
+    padding: 4rem;
+}
+.join-us__account-type:hover .join-us__account-type-icon:first-child {
+    fill: var(--primary-color);
+}
+.join-us__account-type:hover .join-us__account-type-icon:last-child {
+    fill: var(--white-color);
+}
+.join-us__account-type-icon-wrapper {
+    position: relative;
+}
+.join-us__account-type-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 30rem;
+}
+.join-us__account-type-icon:last-child {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+}
+.join-us__account-type-title {
+    font-weight: 500;
+    color: var(--black-color);
+}
+.join-us__account-type-caption {
+    color: var(--color-8692A6);
+    font-size: 1.4rem;
+    line-height: 1.7rem;
 }
