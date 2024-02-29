@@ -1,0 +1,64 @@
+:root {
+    --primary-color: #1565d8;
+    --black-color: #000;
+    --white-color: #fff;
+    --color-BDBDBD: #bdbdbd;
+    --color-8692A6: #8692a6;
+    --color-494949: #494949;
+    --color-696F79: #696f79;
+}
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+    word-wrap: break-word;
+    color: var(--color-8692A6);
+    background: var(--white-color);
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+.login-form {
+    display: grid;
+    grid-template-columns: 666px 774px;
+    height: 1024px;
+}
+
+.login-form_content {
+    height: 100%;
+    background: linear-gradient(rgba(21, 101, 216, 0.9), rgba(21, 101, 216, 0.9)), url("../Images/main-pic.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5rem;
+    color: var(--white-color);
+}
+
+.login-form__icon-wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+.login-form__icon {
+}
+.login-form__icon-text {
+}
+
+.login-form__Description {
+}
+.login-form__label {
+}
+.login-form__label-icon {
+}
