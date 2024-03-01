@@ -66,7 +66,7 @@ a {
 
 .login-form {
     display: grid;
-    grid-template-columns: 666px 774px;
+    grid-template-columns: 3.5fr 4fr;
     height: 1024px;
     margin: 0 auto;
     max-width: 1440px;
@@ -108,7 +108,7 @@ a {
 }
 .login-form__label-icon {
 }
-.login-item {
+.login-items {
     margin-top: 6rem;
 }
 /* Join Us page*/
@@ -176,4 +176,32 @@ a {
     color: var(--color-8692A6);
     font-size: 1.4rem;
     line-height: 1.7rem;
+}
+/* gesture */
+.gesture {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5rem;
+}
+.gesture__back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-8692A6);
+}
+.gesture__back-icon {
+}
+.gesture__label {
+    display: flex;
+    flex-direction: column-reverse;
+    font-weight: 600;
+    text-align: right;
+}
+.gesture__label span {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: right;
+    margin-bottom: 0.5rem;
 }
