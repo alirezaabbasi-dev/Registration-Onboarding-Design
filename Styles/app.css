@@ -236,7 +236,6 @@ button {
     font-weight: 500;
     color: var(--color-696F79);
 }
-
 .oasis-form__input {
     border: 1px;
     font-size: 1.4rem;
@@ -267,7 +266,6 @@ button {
 }
 .oasis-form__password-show {
     position: absolute;
-
     right: 2rem;
     bottom: 2rem;
     font-size: 12px;
@@ -299,7 +297,8 @@ button {
     -ms-transform: scale(0.9);
     -o-transform: scale(0.9);
 }
-.oasis-form > span {
+.oasis-form > span,
+.oasis-form__label {
     font-size: 1.2rem;
     text-align: center;
     margin: 3rem 0;
@@ -320,3 +319,14 @@ button {
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 30px #1566d846 inset !important;
 }
+.complete-account {
+}
+.oasis-form__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+input::-webkit-calendar-picker-indicator {
+    opacity: 100;
+ }
