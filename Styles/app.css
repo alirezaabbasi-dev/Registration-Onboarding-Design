@@ -141,6 +141,7 @@ button {
 /* Join Us page*/
 .join-us {
     text-align: left;
+    margin-left: 10rem;
 }
 .join-us__already-have-account {
     font-weight: 500;
@@ -219,7 +220,7 @@ button {
     text-align: right;
     margin-bottom: 0.5rem;
 }
-/*  */
+/* oasis-form */
 .oasis-form {
     display: flex;
     flex-direction: column;
@@ -330,6 +331,7 @@ input:-webkit-autofill {
 input::-webkit-calendar-picker-indicator {
     opacity: 100;
 }
+/* BVN */
 .BVN__input {
     margin-bottom: 10rem;
     position: relative;
