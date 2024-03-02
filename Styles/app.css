@@ -41,6 +41,33 @@ body {
 a {
     text-decoration: none;
 }
+button {
+    border: none;
+}
+/* components */
+.title {
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--black-color);
+    margin-top: 16rem;
+    margin-bottom: 2rem;
+}
+.caption {
+    max-width: 35rem;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    margin-bottom: 4rem;
+}
+.button {
+    padding: 2rem;
+    font-weight: 500;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    transition: all 120ms ease-in;
+}
 /* shapes */
 .shape-1,
 .shape-2,
@@ -113,7 +140,6 @@ a {
 }
 /* Join Us page*/
 .join-us {
-    padding-left: 12rem;
     text-align: left;
 }
 .join-us__already-have-account {
@@ -125,19 +151,7 @@ a {
 .join-us__already-have-account a {
     color: var(--primary-color);
 }
-.join-us__title {
-    font-weight: 700;
-    font-size: 3rem;
-    color: var(--black-color);
-    margin-top: 16rem;
-    margin-bottom: 2rem;
-}
-.join-us__caption {
-    max-width: 35rem;
-    font-size: 1.8rem;
-    line-height: 2.8rem;
-    margin-bottom: 4rem;
-}
+
 .join-us__account-type {
     box-shadow: 0 2px 14px 1px rgba(0, 0, 0, 0.04);
     max-width: 52rem;
@@ -204,4 +218,105 @@ a {
     font-weight: 500;
     text-align: right;
     margin-bottom: 0.5rem;
+}
+/*  */
+.oasis-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 53rem;
+    padding-left: 12rem;
+}
+.oasis-form__wrapper {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.oasis-form__wrapper label {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: var(--color-696F79);
+}
+
+.oasis-form__input {
+    border: 1px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 1.7rem;
+    outline: 1px solid var(--color-8692A6);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    transition: all 120ms ease-in;
+    -webkit-transition: all 120ms ease-in;
+    -moz-transition: all 120ms ease-in;
+    -ms-transition: all 120ms ease-in;
+    -o-transition: all 120ms ease-in;
+}
+.oasis-form__input:focus {
+    outline: 1px solid var(--primary-color);
+    box-shadow: 0 4px 10px 3px rgba(0, 0, 0, 0.11);
+    color: var(--black-color);
+}
+.oasis-form__input:focus::placeholder {
+    color: var(--black-color);
+}
+.oasis-form__password-field {
+    position: relative;
+}
+.oasis-form__password-show {
+    position: absolute;
+
+    right: 2rem;
+    bottom: 2rem;
+    font-size: 12px;
+    color: var(--black-color);
+    cursor: pointer;
+}
+.oasis-form__checkbox-wrapper {
+    margin-bottom: 3rem;
+}
+.oasis-form__checkbox {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.oasis-form__checkbox-label {
+    font-weight: 600;
+}
+.oasis-form__button {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.oasis-form__button:hover {
+    background-color: #114fa7;
+}
+.oasis-form__button:active,
+.register-google:active {
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+}
+.oasis-form > span {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 3rem 0;
+    color: #bababa;
+}
+.register-google {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10rem;
+}
+.register-google:hover {
+    background-color: #ebebeb;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #1566d846 inset !important;
 }
