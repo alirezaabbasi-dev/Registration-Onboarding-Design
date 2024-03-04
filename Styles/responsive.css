@@ -1,19 +1,63 @@
-@media screen and (min-width: 350px) {
+@media screen and (max-width: 1400px) {
+}
+@media screen and (max-width: 1200px) {
+    .shape-3 {
+        display: none;
+    }
+}
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 768px) {
+    .container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .login-form {
+        grid-template-columns: 1fr;
+    }
+
+    .login-form__content {
+        height: 38rem;
+    }
+    .login-form__Description {
+        font-size: 1.5rem;
+    }
+    .login-form__icon-wrapper {
+        margin-bottom: 3rem;
+    }
+    .login-form__label {
+        font-size: 1.4rem;
+    }
+    .shape-1 {
+        top: 8rem;
+        right: 10rem;
+    }
+    .shape-2 {
+        display: none;
+    }
+    .shape-3 {
+        bottom: 3rem;
+        right: 3rem;
+        display: inline-block;
+    }
+    .shape-4 {
+        display: none;
+    }
 }
 
-@media screen and (min-width: 410px) {
+@media screen and (max-width: 576px) {
+    .login-form__Description {
+        margin-bottom: 0.5rem;
+        height: 22.8rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 6; /*define how many line you want to show */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+@media screen and (max-width: 410px) {
 }
 
-@media screen and (min-width: 576px) {
-}
-@media screen and (min-width: 768px) {
-}
-
-@media screen and (min-width: 992px) {
-}
-
-@media screen and (min-width: 1200px) {
-}
-
-@media screen and (min-width: 1400px) {
+@media screen and (max-width: 350px) {
 }
