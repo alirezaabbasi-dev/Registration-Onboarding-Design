@@ -151,11 +151,21 @@ button {
 }
 .join-us__already-have-account a {
     color: var(--primary-color);
+    transition: all 120ms ease-in;
 }
-
+.join-us__already-have-account a:hover {
+    color: #0e3e81;
+}
 .join-us__account-type {
     box-shadow: 0 2px 14px 1px rgba(0, 0, 0, 0.04);
     max-width: 52rem;
+    border-radius: 0.6rem;
+    transition: all 120ms ease-in;
+    margin-bottom: 2rem;
+    -webkit-transition: all 120ms ease-in;
+    -moz-transition: all 120ms ease-in;
+    -ms-transition: all 120ms ease-in;
+    -o-transition: all 120ms ease-in;
 }
 .join-us__account-type-links {
     display: flex;
@@ -163,6 +173,14 @@ button {
     justify-content: start;
     gap: 2rem;
     padding: 4rem;
+    transition: all 120ms ease-in;
+}
+.join-us__account-type:hover {
+    border: 1px solid var(--primary-color);
+    background-color: rgba(21, 101, 216, 0.08);
+}
+.join-us__account-type:hover .join-us__arrow {
+    display: inline-block;
 }
 .join-us__account-type:hover .join-us__account-type-icon:first-child {
     fill: var(--primary-color);
@@ -172,6 +190,9 @@ button {
 }
 .join-us__account-type-icon-wrapper {
     position: relative;
+}
+.join-us__account-type-icon {
+    transition: all 120ms ease-in;
 }
 .join-us__account-type-text-wrapper {
     display: flex;
@@ -191,6 +212,14 @@ button {
     color: var(--color-8692A6);
     font-size: 1.4rem;
     line-height: 1.7rem;
+}
+.join-us__arrow {
+    display: none;
+    transition: all 120ms ease-out;
+    -webkit-transition: all 120ms ease-out;
+    -moz-transition: all 120ms ease-out;
+    -ms-transition: all 120ms ease-out;
+    -o-transition: all 120ms ease-out;
 }
 /* gesture */
 .gesture {
