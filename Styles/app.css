@@ -372,6 +372,6 @@ input::-webkit-calendar-picker-indicator {
     margin-right: 2rem;
     display: none;
 }
-.verification-icon-show {
+.verification-icon--show {
     display: inline-block;
 }

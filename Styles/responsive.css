@@ -4,8 +4,21 @@
     .shape-3 {
         display: none;
     }
+    .oasis-form {
+        padding: 0 3rem;
+        margin: 0 auto;
+    }
+    .join-us {
+        margin-left: 3rem;
+    }
+    .register-google {
+        gap: 13rem;
+    }
 }
 @media screen and (max-width: 992px) {
+    .register-google {
+     gap: 11rem;
+    }
 }
 @media screen and (max-width: 768px) {
     .container {
@@ -43,6 +56,10 @@
     .shape-4 {
         display: none;
     }
+
+    .login-form__content--hide {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -57,6 +74,9 @@
     }
 }
 @media screen and (max-width: 410px) {
+    .register-google {
+        gap: 6rem;
+    }
 }
 
 @media screen and (max-width: 350px) {
