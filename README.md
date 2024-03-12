@@ -7,12 +7,9 @@
     justify-content:center;
     gap:2rem; 
     margin:0 auto;
-    
-}
-div {
-   
 }
 </style>
+
 <div class="container">
 
  <div>
