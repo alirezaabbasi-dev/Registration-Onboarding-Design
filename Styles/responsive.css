@@ -17,7 +17,7 @@
 }
 @media screen and (max-width: 992px) {
     .register-google {
-     gap: 11rem;
+        gap: 11rem;
     }
 }
 @media screen and (max-width: 768px) {
@@ -28,10 +28,10 @@
     .login-form {
         grid-template-columns: 1fr;
     }
-    .join-us{
+    .join-us {
         margin: 0 3rem;
     }
-    .join-us__already-have-account{
+    .join-us__already-have-account {
         font-size: 1.4rem;
         margin-top: 4rem;
     }
@@ -66,7 +66,6 @@
     .login-form__content--hide {
         display: none;
     }
-
 }
 
 @media screen and (max-width: 576px) {
