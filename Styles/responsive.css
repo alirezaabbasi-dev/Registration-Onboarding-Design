@@ -28,7 +28,12 @@
     .login-form {
         grid-template-columns: 1fr;
     }
-
+    .join-us{
+        margin: 0 3rem;
+    }
+    .join-us__already-have-account{
+        font-size: 1.4rem;
+    }
     .login-form__content {
         height: 38rem;
     }
@@ -60,6 +65,7 @@
     .login-form__content--hide {
         display: none;
     }
+
 }
 
 @media screen and (max-width: 576px) {

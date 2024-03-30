@@ -30,6 +30,13 @@ body {
     color: var(--color-8692A6);
     background: var(--white-color);
 }
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
 
 ::-webkit-scrollbar {
     width: 5px;
