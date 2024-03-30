@@ -200,6 +200,8 @@ button {
     gap: 2rem;
     padding: 4rem;
     transition: all 120ms ease-in;
+    border: 1px solid transparent;
+    position: relative;
 }
 .join-us__account-type:hover {
     border: 1px solid var(--primary-color);
@@ -207,6 +209,8 @@ button {
 }
 .join-us__account-type:hover .join-us__arrow {
     display: inline-block;
+    position: absolute;
+    right: 2.2rem;
 }
 .join-us__account-type:hover .join-us__account-type-icon:first-child {
     fill: var(--primary-color);
